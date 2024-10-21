@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.example.model.Patient;
 import org.example.model.User;
 import org.example.repository.UserRepository;

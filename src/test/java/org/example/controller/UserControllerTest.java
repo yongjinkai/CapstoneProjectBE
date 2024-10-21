@@ -102,7 +102,6 @@ class UserControllerTest {
                 .andExpect(jsonPath("$.name").value(user1.getName()))
                 .andExpect(jsonPath("$.email").value(user1.getEmail()))
                 .andExpect(jsonPath("$.phone").value(user1.getPhone()))
-//                .andExpect(jsonPath("$.role").value(user1.getRole()))
                 .andExpect(jsonPath("$.role").value("Nurse"))
                 .andExpect(jsonPath("$.password").value(user1.getPassword()))
                 .andExpect(result -> assertTrue(result.getResponse().getContentAsString().contains(user1.getEmail())));
